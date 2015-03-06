@@ -8,7 +8,7 @@
 *                                   STM3210B-EVAL Evaluation Board
 *
 * Filename      : bsp.c
-* Version       : V0.1
+* Version       : V0.01
 * Programmer(s) : gnlin
 *********************************************************************************************************
 */
@@ -39,28 +39,28 @@
 void BSP_Init (void)
 {
 	SystemInit();
-	/* ³õÊ¼»¯SysTick·şÎñ */
+	/* åˆå§‹åŒ–SysTickæœåŠ¡ */
 	OS_CPU_SysTickInit();
-    /* ³õÊ¼»¯Usart·şÎñ */
+    /* åˆå§‹åŒ–UsartæœåŠ¡ */
 	USART_Configuration();
    	BSP_IntInit();
 	BSP_IntVectSet(BSP_INT_ID_RTC, rtc_isr);
 	BSP_IntPrioSet(BSP_INT_ID_RTC, RTC_Second_Prio);
 
-	/* ³õÊ¼»¯RTC */
+	/* åˆå§‹åŒ–RTC */
 	rtc_init();
 
-	/* ³õÊ¼»¯°´¼ü¶ÓÁĞ */
+	/* åˆå§‹åŒ–æŒ‰é”®é˜Ÿåˆ— */
     init_button();
-	/* led³õÊ¼»¯ */
+	/* ledåˆå§‹åŒ– */
 	BSP_Led_Init();
-	/* ³õÊ¼»¯OLEDÏÔÊ¾Æ÷ */
+	/* åˆå§‹åŒ–OLEDæ˜¾ç¤ºå™¨ */
 	OLED_Init();
-	/* ³õÊ¼»¯VS1003B */
+	/* åˆå§‹åŒ–VS1003B */
 	vs1003b_init();
-	/* ³õÊ¼»¯EEPROM·ÃÎÊ */
+	/* åˆå§‹åŒ–EEPROMè®¿é—® */
 	AT24CXX_Init();
-	/* ³õÊ¼»¯SPI Flash·ÃÎÊ */
+	/* åˆå§‹åŒ–SPI Flashè®¿é—® */
 	W25X16_Init();
 }
 
