@@ -10,7 +10,7 @@
 * Filename      : bsp.h
 * Version       : V1.00 
 * Programmer(s) : Brian Nagel
-* Modified by   : gnlin
+* Modified By   : gnlin
 *********************************************************************************************************
 */
 
