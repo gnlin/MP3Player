@@ -8,7 +8,7 @@
 *                                   STM3210B-EVAL Evaluation Board
 *
 * Filename      : bsp.h
-* Version       : V0.1
+* Version       : V0.01
 * Programmer(s) : gnlin
 *********************************************************************************************************
 */
