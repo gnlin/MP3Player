@@ -21,8 +21,8 @@
 *                                   STM3210B-EVAL Evaluation Board
 *
 * Filename      : app.c
-* Version       : V0.01
-* Programmer(s) : gnlin
+* Version       : V1.00  
+* Programmer(s) : Brian Nagel  
 *********************************************************************************************************
 */
 
